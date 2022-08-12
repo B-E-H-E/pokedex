@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png"  sizes="16x16" href="./favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- CSS and Fonts -->
+    <link rel="stylesheet" type="text/css" href="./css/pokedex.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- JS -->
+    <script defer src="./js/pokedex.js"></script>
+
+    <title>Pokédex</title>
+</head>
+
+<body>    
+    <header>        
+        <img src="./img/logo.png" alt="Logo" class="logo">
+    </header>
+    <main>
+        <div class="pkdx_img_container">
+            <img src="./img/pokedex.png" alt="Pokedéx" class="pokedex">
+        </div>
+        <div class="pkm_img_container centralize">
+            <img src ='' alt="Pokemón" class="pokemon_image">
+        </div>
+
+        <h1 class="pokemon_data centralize">
+            <span class="pokemon_number"></span> .
+            <span class="pokemon_name"></span>
+        </h1>
+
+        <div class="pokemon_type centralize">
+            <div class="type1 type__Color">Test 1</div>
+            <div class="type2 type__Color">Test 2</div>    
+        </div>
+
+        <form class="form centralize">
+            <input type="search" class="input_search" placeholder="Name or Number" required>
+        </form>
+
+        <div class="buttons centralize">
+            <button type="button" class="button btn-prev">Prev.<br>&lt;</button>
+            <button type="button" class="button btn-next">Next<br>&gt;</button>
+        </div>
+    </main>
+    <footer>
+        <div class='footer'>
+            <span>Developed by Behe</span>
+        </div>
+    </footer>
+</body>
+</html>

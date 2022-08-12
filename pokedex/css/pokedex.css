@@ -1,0 +1,202 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+}
+
+html {
+    font-size: 75%;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #f0f0f0, #94a1d8);
+    height: 100vh;
+    width: 100vw;
+}
+
+header, footer {
+    width: 90%;
+}
+
+.footer {
+    width: 90%;
+    position: absolute;
+    bottom: 5px;
+}
+
+.footer span {
+    position: relative;
+    width: 100%;
+}
+
+.logo {
+    width: 30vw;
+    min-width: 250px;
+    max-width: 374px;    
+    height: auto;
+    margin-top: 3px;
+    padding-bottom: 10px;
+}
+
+main {    
+    position: relative;    
+    width: 100%;
+    padding: 15px;
+    min-height: 50vh;    
+    
+}
+
+.centralize {
+    left:5%;
+}
+
+.pkdx_img_container{
+    position: absolute;
+    bottom: -35%;
+    left: 4.5%;
+    width: 90%;    
+}
+
+.pokedex {
+    width: 20vw;
+    min-width: 250px;
+    margin: 0 auto;
+    /*max-width: 499px;*/    
+}
+
+.pkm_img_container {
+    position: absolute;
+    bottom: -7%;    
+    width: 90%;
+    animation: pokemon-animation 3s infinite linear;
+       
+}
+
+.pokemon_image {    
+    width: 12.5vw;
+    min-width: 200px;
+    margin: 0 auto;    
+}
+
+@keyframes pokemon-animation {
+    0% {
+        bottom: -7%;
+    }
+    50% {
+        bottom: -4%;
+    }
+    100% {
+        bottom: -7%;
+    }
+}
+
+.pokemon_data {
+    font-size: 1.25rem;
+    position: absolute;    
+    top: 20%;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;    
+}
+
+.pokemon_name {
+    text-transform: capitalize;    
+}
+
+.form {
+    position: absolute;
+    top: 5%;    
+    width: 90%;
+}
+
+.input_search {
+    width: 35%;
+    border: 1px solid #333;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #222;
+    border-radius: 5px;
+    padding: 0.8%;
+    outline: none;
+    box-shadow: 0 2px 0 #222;
+}
+
+.pokemon_type {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    top: 30%;
+    width: 90%;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.type1, .type2 {
+    padding: 1%;  
+    margin: 0;  
+    border: 1px solid #222;
+    box-shadow: 2px 3px #eee, -2px -3px #eee;
+    border-radius: 12.5px;    
+}
+
+.buttons {
+    position: absolute;
+    bottom: -17.5%;    
+    width: 90%;
+    display: flex;
+    gap: 35%;
+    justify-content: center;
+    
+}
+
+.button {
+    width: 15%;
+    margin: 0;
+    padding: 0.5%;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.25rem;
+    font-family: 'Press Start 2P', sans-serif;
+    background-color: rgb(199, 15, 15);
+    color: #eee;
+    box-shadow: -1px 2px 0 #222;
+}
+
+.button:active {
+    box-shadow: inset -2px 2.5px 0 #222;
+    font-size: 0.95rem;    
+}
+
+.btn-left {
+    position: absolute;
+    left: 5%;
+}
+
+.btn-right {
+    position: absolute;
+    right: 5%;
+}
+
+@media (max-width:800px) {
+    .buttons {
+        gap: 45%;
+    }
+}
+
+@media (max-width:600px) {
+    .button {
+        width: 40%;
+    }
+    .buttons {
+        bottom: -50%;    
+        width: 90%;
+        gap: 5%;        
+    }
+}
